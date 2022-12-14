@@ -1,0 +1,38 @@
+/*? ===== CSS DEL LOGIN DE USUARIOS */
+.div-login{
+    display:grid;
+    place-items: center;
+}
+.div-login-form{
+    text-align: center;
+    background-color: #74acdf;
+    color: white;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.login-button{
+    width: 100px;
+}
+.div-login input{
+    border-radius: 15px;
+}
+/*? ===== CSS DEL REGISTRO DE USUARIOS */
+.div-register{
+    display:grid;
+    place-items: center;
+}
+.div-register-form{
+    text-align: left;
+    background-color: #74acdf;
+    color: white;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.register-button{
+    width: 100px;
+}
+.div-register input{
+    border-radius: 15px;
+}
