@@ -1,0 +1,23 @@
+{% extends "inicio/base-index.html" %} <!--! la plantilla se encuentra en la carpeta "templates/inicio" por eso el extends es de "inicio/"-->
+
+{% block contenido %}
+<div class="div-login">
+{% if errors %}
+<p> Se encontraron errores en el inicio de sesión: {{errors}}</p>
+{% endif %}
+<br>
+    <div class="div-login-form">
+        <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input class="login-button" type="submit" value="Login"> ¿No tienes cuenta? <a href="{% url 'accounts-register' %}">Crear cuenta</a>
+        </form>
+        <br>
+    </div>
+<br>
+
+</div>
+
+
+{% endblock %}
